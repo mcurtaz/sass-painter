@@ -1,8 +1,6 @@
 header#header{
+  // GENERALI HEADER
   width: 100%;
-
-  /* debug */
-  height: 500px;
 
   display: flex;
   flex-direction: column;
@@ -12,6 +10,8 @@ header#header{
   background-color: black;
   color: #fff;
 
+
+  // PARTE SOPRA NAVBAR
   nav#top-nav{
     display: flex;
     justify-content: flex-end;
@@ -20,6 +20,7 @@ header#header{
     padding: 10px 0;
 
     .up-links ul{
+
       @include nav-links;
 
       li{
@@ -39,6 +40,7 @@ header#header{
     }
   }
 
+  // PARTE SOTTO NAVBAR
   nav#bottom-nav{
     height: 60px;
 
@@ -46,15 +48,18 @@ header#header{
     justify-content: flex-start;
     align-items: flex-end;
 
-    padding: 10px 0;
+    padding: 10px 0 0 0;
 
+    // LOGO
     .logo {
       margin-right: 20px;
+      padding: 10px 0;
       img{
       height: 100%;
      }
     }
 
+    // LINK PARTE SOTTO NAVBAR
     .bottom-links{
       height: 100%;
     }
@@ -73,6 +78,7 @@ header#header{
 
         i{
           padding-left: 5px;
+          font-size: 12px;
         }
 
         &:hover{
@@ -88,10 +94,9 @@ header#header{
         }
       }
 
-      // DROPDOWNS
-
+      // DROPDOWNS PARTE SOTTO NAVBAR
       .dropdown-content{
-        width: 100%;
+        width: 130%;
         display: none;
 
         position: absolute;
@@ -125,4 +130,29 @@ header#header{
   }
 
 
+  // JUMBOTRON
+  #jumbotron{
+    width: 100%;
+
+    background-image: url("imgs/jumbo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    // debug
+    height: 410px;
+
+    &>.container{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .jumbo-left{
+        width: 35%;
+      }
+
+      .jumbo-right{
+        width: 35%;
+      }
+    }
+  }
 }
