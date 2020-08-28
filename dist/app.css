@@ -1,8 +1,91 @@
-body {
-  background-color: purple;
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;
+
+0,400;0,600;0,700;0,900;1,400;1,700&display=swap);* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body h1 {
-  color: white;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  color: #989898;
+  text-decoration: none;
+}
+
+header#header {
+  width: 100%;
+  /* debug */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: black;
+  color: #fff;
+}
+
+header#header nav#top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header#header nav#top-nav .up-links ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+header#header nav#top-nav .up-links ul li {
+  padding: 0 10px;
+}
+
+header#header nav#top-nav .up-links ul li i {
+  color: #009cff;
+  margin-right: 5px;
+}
+
+header#header nav#top-nav .up-links ul li span {
+  text-decoration: none;
+  color: #989898;
+}
+
+header#header nav#bottom-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 10px 0;
+}
+
+header#header nav#bottom-nav .logo {
+  margin-right: 20px;
+}
+
+header#header nav#bottom-nav .logo img {
+  width: 130px;
+}
+
+header#header nav#bottom-nav .bottom-links ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+header#header nav#bottom-nav .bottom-links ul li {
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+header#header nav#bottom-nav .bottom-links ul li span {
+  text-decoration: none;
+  color: #989898;
 }
 

@@ -1,6 +1,21 @@
-body{
-  background-color: purple;
-  h1{
-    color: white;
-  }
+@import "partials/_common.scss";
+@import "partials/_variables.scss";
+
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a{
+  color: $cl_links;
+  text-decoration: none;
+}
+
+@import "partials/_header.scss"
